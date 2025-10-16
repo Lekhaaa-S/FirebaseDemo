@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Notes</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f6f9fc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input {
+      height: 40px;
+      font-weight: 500;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .note {
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h3>Create a New Note</h3>
+  <label for="noteTitle"><b>Title:</b></label>
+  <input id="noteTitle" type="text" placeholder="Enter note title here..."><br>
+  
+  <label for="noteText"><b>Note:</b></label>
+  <textarea id="noteText" placeholder="Write your note..."></textarea><br>
+  
+  <button id="saveNoteBtn">Save Note</button>
+  <button id="logoutBtn">Logout</button>
+
+  <h4>Your Notes:</h4>
+  <div id="notes"></div>
+
+  <script type="module" src="notes.js"></script>
+</body>
+</html>
