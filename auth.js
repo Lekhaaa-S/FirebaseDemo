@@ -3,9 +3,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword }
 from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCw21BOkaW1Zlemc8j40WcRCXg4pqRzv_U",
-  authDomain: "fir-a4f20.firebaseapp.com",
-  projectId: "fir-a4f20",
+  //config of your app
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -24,3 +22,4 @@ document.getElementById("loginBtn").onclick = async () => {
     alert("Login successful!"); window.location = "notes.html";
   } catch (e) { alert(e.message); }
 };
+
