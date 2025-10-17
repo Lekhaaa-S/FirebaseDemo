@@ -5,11 +5,8 @@ from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 import { getFirestore, collection, addDoc, getDocs } 
 from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
 
-// Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyCw21BOkaW1Zlemc8j40WcRCXg4pqRzv_U",
-  authDomain: "fir-a4f20.firebaseapp.com",
-  projectId: "fir-a4f20",
+  //config of your app
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -68,3 +65,4 @@ onAuthStateChanged(auth, (user) => {
   if (user) loadNotes();
   else window.location = "index.html";
 });
+
